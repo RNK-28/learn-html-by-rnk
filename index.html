@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Science Grade 10th</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Highlight.js CSS for a dark theme -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #1a202c;
+            color: #e2e8f0;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 2rem;
+        }
+        .card {
+            background-color: #2d3748;
+            border-radius: 1rem;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .card h2 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #4fd1c5;
+            margin-bottom: 1rem;
+        }
+        .card p {
+            margin-bottom: 1rem;
+        }
+        .code-block {
+            background-color: #171923;
+            border-radius: 0.5rem;
+            padding: 1rem;
+            overflow-x: auto;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.875rem;
+            margin-top: 1rem;
+            position: relative;
+        }
+        
+        /* Copy button styles */
+        .copy-btn {
+            position: absolute;
+            top: 0.5rem;
+            right: 0.5rem;
+            background-color: #4fd1c5;
+            color: #1a202c;
+            border: none;
+            border-radius: 0.25rem;
+            padding: 0.25rem 0.5rem;
+            font-size: 0.75rem;
+            cursor: pointer;
+            opacity: 0.7;
+            transition: opacity 0.3s;
+        }
+        
+        .copy-btn:hover {
+            opacity: 1;
+        }
+        
+        .copy-notification {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #4fd1c5;
+            color: #1a202c;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transition: opacity 0.3s;
+            z-index: 1000;
+        }
+        
+        .copy-notification.show {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-200">
+
+    <div class="container mx-auto p-8">
+        <header class="text-center mb-12">
+            <h1 class="text-4xl sm:text-5xl font-extrabold text-teal-400 mb-2">Complete Complete H HTML</h1>
+        </header>
+
+        <main>
+            <!-- Act 2.4 -->
+            <div class="card">
+                <h2 class="text-2xl font-semibold mb-4 text-teal-300">HTML kya hai?</h2>
+                <p>HTML ki full form Hyper Text Markup Language hai or ye Website banane main use hoti hai darasal webpage 3 hiso main bata hota hai.</p>
+                <p><strong>1.HTML(Hyper Text Markup Language)</strong></p>
+				<p><strong>2.CSS(Cascading Style Sheets)</strong></p>
+				<p><strong>3.JS (Java Script)</strong></p>
+				<p><strong>For Example: </strong>Ap logo ne ek ghar banwaya hai jis main abhi filhal koy paint nhi hoa hoa or khobsorat furniture bhi abhi nhi pare hai to is ko ham html kehte hai phir os ke baad ham is main paint kare ge or khobsorat furniture bhi rakhe ge ab ham ne ghar ko style dya to ise hi CSS kehte hai or phir ham ne kuch cheze rakhi jese microwave to wo kam kese kare ga os main ham ne function dale to ise JS kahe ge </p>
+				<p>Abhi ham sirf HTML sikhe ge or kuch nhi OK</p>
+                <h2 class="text-2xl font-semibold mb-4 text-teal-300">Structure Of HTML</h2>
+				<p>HTML ko agar asani se samajna hai to ye samjo ke ap ko is ka structure bar bar bnane ki zarorat nhi hai na hi zabani yad karne ki zarorat bas ye structure copy paste karna hai or &lt;body&gt;&lt;/body&gt; is tag ke andar apna code likhna start kar de</p>
+				<p><strong>Niche full structure dya gya hai</strong></p>
+				
+				
+                
+				<div class="code-block">
+                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+				    <pre><code class="language-html">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    
+&lt;/body&gt;
+&lt;/html&gt;
+
+</code></pre>
+                </div>
+				<br>
+				<p>Dekho ye sab dekh kar darne ki zarorat nhi hai tumhe kuch bhi zabani yaad karne ki  zarorat nhi hai to bas is ko copy paste karo or likhna start karo title wale tag main apni website ka name dal dena phir body tag ke andar apna code likhna start karna</p>
+            </div>
+			<div class="card">
+			<h2 class="text-2xl font-semibold mb-4 text-teal-300">Tags Kya Hai?</h2>
+			<p>Sab se pehle ye samjo ke tags likhte kaise hai wo ese likhte hai <strong>&lt;tag_name&gt;</strong> har tag ka ek ending tag zaror hota hai kuch aisa &lt;/tag_name&gt; par kuch kuch ke nhi hote wo ham agge chal ke parhe ge.</p>
+			<p>Filhal abhi ham 2 tags ke bare main jante hai ek hai &lt;p&gt; or &lt;h1&gt; sab se pehle ham p wale tag ko dekhte hai ke ye kya kam karta hai ye kam karta hai ke screen main paragraph ko print karwata hai or h1 tag heading hoti hai jese ham paper karte hai pehle heading dete hai phir paragraph likhte hai ye wese hi hota hai lekin h1 tag ek hi nhi hota ese 6 or tag hote hai.</p>
+			<p><strong>h1 (Most important heading)</strong></p>
+			<p><strong>h2 (Os se thory important heading)</strong></p>
+			<p><strong>h3 (Normal heading)</strong></p>
+			<p><strong>h4 (ye itni important nhi hogi)</strong></p>
+			<p><strong>h5 (ye to os se bhi zyada important nhi hogi)</strong></p>
+			<p><strong>h6 (ye important hi nhi hogi)</strong></p>
+			<p>Is ka ek example code niche dya gya hai</p>
+			<div class="code-block">
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+			    <pre><code class="language-html">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Heading No.1&lt;/h1&gt;
+	&lt;h2&gt;Heading No.2&lt;/h2&gt;
+	&lt;h3&gt;Heading No.3&lt;/h3&gt;
+	&lt;h4&gt;Heading No.4&lt;/h4&gt;
+	&lt;h5&gt;Heading No.5&lt;/h5&gt;
+	&lt;h6&gt;Heading No.6&lt;/h6&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+</code></pre>
+            </div>
+			<p>Is ko copy kare or kisi bhi html runner main run kare</p>
+			<br>
+			<p>Ab ham p tag ke bare main jante hai is ka matlab paragraph hota hai jo paragraph print karta hai screen main is ka Example code niche ha</p>
+			<div class="code-block">
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+			    <pre><code class="language-html">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Define HTML&lt;/h1&gt;
+	&lt;p&gt;HTML is the code that defines the structure and content of a web page.&lt;/p&gt;
+	
+&lt;/body&gt;
+&lt;/html&gt;
+				</code></pre>
+        </main>
+    </div>
+	<h2 class="text-2xl font-semibold mb-4 text-teal-300 text-center">Created and Designed by Najaf</h2>
+
+    <!-- Copy notification -->
+    <div id="copyNotification" class="copy-notification">Code copied to clipboard!</div>
+
+    <!-- Highlight.js to enable syntax highlighting -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+    <script>
+        // Tell Highlight.js to find and highlight all code blocks
+        hljs.highlightAll();
+        
+        // Function to copy code to clipboard
+        function copyCode(button) {
+            // Get the code block
+            const codeBlock = button.nextElementSibling.querySelector('code');
+            
+            // Create a temporary textarea to hold the code
+            const textarea = document.createElement('textarea');
+            textarea.value = codeBlock.textContent;
+            document.body.appendChild(textarea);
+            
+            // Select and copy the text
+            textarea.select();
+            document.execCommand('copy');
+            
+            // Remove the textarea
+            document.body.removeChild(textarea);
+            
+            // Show notification
+            const notification = document.getElementById('copyNotification');
+            notification.classList.add('show');
+            
+            // Change button text temporarily
+            const originalText = button.textContent;
+            button.textContent = 'Copied!';
+            
+            // Reset button text after 2 seconds
+            setTimeout(() => {
+                button.textContent = originalText;
+                notification.classList.remove('show');
+            }, 2000);
+        }
+    </script>
+</body>
+</html>
