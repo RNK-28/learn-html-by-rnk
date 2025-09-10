@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete HTML by Najaf</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #1a202c;
+            color: #e2e8f0;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 2rem;
+        }
+        .card {
+            background-color: #2d3748;
+            border-radius: 1rem;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .card h2 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #4fd1c5;
+            margin-bottom: 1rem;
+        }
+        .card p {
+            margin-bottom: 1rem;
+        }
+        .code-block {
+            background-color: #171923;
+            border-radius: 0.5rem;
+            padding: 1rem;
+            overflow-x: auto;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.875rem;
+            margin-top: 1rem;
+            position: relative;
+        }
+        
+        /* Copy button styles */
+        .copy-btn {
+            position: absolute;
+            top: 0.5rem;
+            right: 0.5rem;
+            background-color: #4fd1c5;
+            color: #1a202c;
+            border: none;
+            border-radius: 0.25rem;
+            padding: 0.25rem 0.5rem;
+            font-size: 0.75rem;
+            cursor: pointer;
+            opacity: 0.7;
+            transition: opacity 0.3s;
+        }
+        
+        .copy-btn:hover {
+            opacity: 1;
+        }
+        
+        .copy-notification {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #4fd1c5;
+            color: #1a202c;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transition: opacity 0.3s;
+            z-index: 1000;
+        }
+        
+        .copy-notification.show {
+            opacity: 1;
+        }
+
+        /* New Back button styles */
+        .back-btn {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 0.75rem 1.5rem;
+            background-color: #4fd1c5;
+            color: #1a202c;
+            border-radius: 9999px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+
+        .back-btn:hover {
+            transform: translateY(-3px);
+            background-color: #38b2ac;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-200">
+
+    <div class="container mx-auto p-8">
+        <header class="text-center mb-12">
+            <h1 class="text-4xl sm:text-5xl font-extrabold text-teal-400 mb-2">Complete HTML</h1>
+        </header>
+
+        <main>
+            <div class="card">
+                <h2 class="text-2xl font-semibold mb-4 text-teal-300">What is HTML?</h2>
+                <p>HTML stands for HyperText Markup Language and it is used to create websites. A webpage is basically divided into 3 parts:</p>
+                <p><strong>1. HTML (HyperText Markup Language)</strong></p>
+                <p><strong>2. CSS (Cascading Style Sheets)</strong></p>
+                <p><strong>3. JS (JavaScript)</strong></p>
+                <p><strong>For Example: </strong>You built a house that currently has no paint or beautiful furniture. We can call this HTML. Then, when we paint it and add beautiful furniture, we are styling the house, which is called CSS. After that, we add things like a microwave which needs a function to work. This is called JS (JavaScript).</p>
+                <p>For now, we will only learn HTML, nothing else, OK?</p>
+                <h2 class="text-2xl font-semibold mb-4 text-teal-300">Structure of HTML</h2>
+                <p>To understand HTML easily, you don't need to create its structure repeatedly or memorize it. You just need to copy-paste this structure and start writing your code inside the &lt;body&gt;&lt;/body&gt; tag.</p>
+                <p><strong>The full structure is given below:</strong></p>
+                
+                
+                <div class="code-block">
+                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                    <pre><code class="language-html">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    
+&lt;/body&gt;
+&lt;/html&gt;
+
+</code></pre>
+                </div>
+                <br>
+                <p>Look, there's no need to be scared seeing all this. You don't have to memorize anything. Just copy-paste this and start writing. In the title tag, you can put the name of your website, and then start writing your code inside the body tag.</p>
+            </div>
+            <div class="card">
+                <h2 class="text-2xl font-semibold mb-4 text-teal-300">What are Tags?</h2>
+                <p>First, understand how tags are written. They are written like this: <strong>&lt;tag_name&gt;</strong>. Every tag has an ending tag like &lt;/tag_name&gt;, but some don't. We will learn about those later.</p>
+                <p>For now, let's learn about two tags: &lt;p&gt; and &lt;h1&gt;. First, let's look at the &lt;p&gt; tag. It is used to print a paragraph on the screen. The &lt;h1&gt; tag is for a heading, just like we give a heading before writing a paragraph in an essay. But there is not just one &lt;h1&gt; tag; there are 6 more similar tags.</p>
+                <p><strong>h1 (Most important heading)</strong></p>
+                <p><strong>h2 (A slightly less important heading)</strong></p>
+                <p><strong>h3 (Normal heading)</strong></p>
+                <p><strong>h4 (This won't be as important)</strong></p>
+                <p><strong>h5 (This will be even less important)</strong></p>
+                <p><strong>h6 (This won't be important at all)</strong></p>
+                <p>An example code for this is given below</p>
+                <div class="code-block">
+                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                    <pre><code class="language-html">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Heading No.1&lt;/h1&gt;
+    &lt;h2&gt;Heading No.2&lt;/h2&gt;
+    &lt;h3&gt;Heading No.3&lt;/h3&gt;
+    &lt;h4&gt;Heading No.4&lt;/h4&gt;
+    &lt;h5&gt;Heading No.5&lt;/h5&gt;
+    &lt;h6&gt;Heading No.6&lt;/h6&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+</code></pre>
+                </div>
+                <p>Copy this and run it in any HTML runner.</p>
+                <br>
+                <p>Now, let's learn about the &lt;p&gt; tag. It stands for paragraph and prints a paragraph on the screen. Its example code is below.</p>
+                <div class="code-block">
+                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                    <pre><code class="language-html">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Define HTML&lt;/h1&gt;
+    &lt;p&gt;HTML is the code that defines the structure and content of a web page.&lt;/p&gt;
+    
+&lt;/body&gt;
+&lt;/html&gt;
+                </code></pre>
+                </div>
+            </div>
+            <div class="card">
+                <h2 class="text-2xl font-semibold mb-4 text-teal-300">How to Run HTML?</h2>
+                <p>There are many apps and websites that can be used to run HTML. However, many websites are for pro users who know full HTML. But don't worry, <strong>Najaf</strong> has found a solution and created his own website that you can use.</p>
+                <p>Copy the link given below and run it in your browser.</p>
+                <div class="code-block">
+                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                    <pre><code class="language-html">
+https://rnk-28.github.io/RNK-HTML-Runner/
+                </code></pre>
+                </div>
+                <br>
+                <h2 class="text-2xl font-semibold mb-4 text-teal-300">How to use RNK HTML Runner?</h2>
+                <p>When you visit it, you will see 3 things at the top:</p>
+                <p><strong>1. Run</strong></p>
+                <p><strong>2. Structure</strong></p>
+                <p><strong>3. Wrap</strong></p>
+                <p><strong>Run: </strong>After you write your code, you can press the run button to run it. After viewing the output, you can press the cross button to come back.</p>
+                <p><strong>Structure: </strong>After pressing this button, the HTML Structure will appear on the screen, after which you can comfortably write your code inside the body tag. You should definitely try it once.</p>
+                <p><strong>Wrap: </strong>This will prevent you from having to scroll from left to right if a line of your code becomes too long. If you still don't understand what 'wrap' is even after my explanation, then there's nothing I can do.</p>
+        </main>
+        
+        <div class="text-center mt-8">
+            <a href="index.html" class="back-btn">← Back to Language Selection</a>
+        </div>
+    </div>
+    <h2 class="text-2xl font-semibold mb-4 text-teal-300 text-center">Created and Designed by Najaf</h2>
+
+    <div id="copyNotification" class="copy-notification">Code copied to clipboard!</div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+    <script>
+        // Tell Highlight.js to find and highlight all code blocks
+        hljs.highlightAll();
+        
+        // Function to copy code to clipboard
+        function copyCode(button) {
+            // Get the code block
+            const codeBlock = button.nextElementSibling.querySelector('code');
+            
+            // Create a temporary textarea to hold the code
+            const textarea = document.createElement('textarea');
+            textarea.value = codeBlock.textContent;
+            document.body.appendChild(textarea);
+            
+            // Select and copy the text
+            textarea.select();
+            document.execCommand('copy');
+            
+            // Remove the textarea
+            document.body.removeChild(textarea);
+            
+            // Show notification
+            const notification = document.getElementById('copyNotification');
+            notification.classList.add('show');
+            
+            // Change button text temporarily
+            const originalText = button.textContent;
+            button.textContent = 'Copied!';
+            
+            // Reset button text after 2 seconds
+            setTimeout(() => {
+                button.textContent = originalText;
+                notification.classList.remove('show');
+            }, 2000);
+        }
+    </script>
+</body>
+</html>
